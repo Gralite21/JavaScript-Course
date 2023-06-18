@@ -7,9 +7,14 @@
     <body>
       <p>Cart Quantity</p>
       <button onclick="console.log(`CartQuantity: ${Cartquantity}`);">Show Quantity</button>
-      <button onclick="Cartquantity = Cartquantity+1;console.log(`CartQuantity: ${Cartquantity}`);">Add to Cart</button>
+      <button onclick="Cartquantity ++;console.log(`CartQuantity: ${Cartquantity}`);">Add to Cart</button>
       <button onclick="Cartquantity = Cartquantity+2; console.log(`CartQuantity: ${Cartquantity}`);">+2</button>
-      <button onclick="Cartquantity = Cartquantity+3; console.log(`CartQuantity: ${Cartquantity}`);">+3</button>
+      <button onclick="Cartquantity +=3; console.log(`CartQuantity: ${Cartquantity}`);">+3</button>
+      <button onclick="Cartquantity +=4; console.log(`CartQuantity: ${Cartquantity}`);">+4</button>
+      <button onclick="Cartquantity +=5; console.log(`CartQuantity: ${Cartquantity}`);">+5</button>
+      <button onclick="Cartquantity --; console.log(`CartQuantity: ${Cartquantity}`);">Remove from Cart</button>
+      <button onclick="Cartquantity -=2; console.log(`CartQuantity: ${Cartquantity}`);">-2</button>
+      <button onclick="Cartquantity -=3; console.log(`CartQuantity: ${Cartquantity}`)">-3</button>
       <button onclick="Cartquantity = 0; console.log('Cart was Reset'); console.log(`CartQuantity: ${Cartquantity}`)">Reset Cart</button>
 
 
