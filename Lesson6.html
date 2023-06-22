@@ -5,6 +5,7 @@
 </head>
 <body>
    <script>
+
      true
      false
 
@@ -19,6 +20,33 @@
      if (true){console.log('hello');}
      if (false) {console.log('hello');}
      else{console.log('else');}
+
+
+
+     if(5){
+         console.log('truthy');
+     }
+     if(0){
+         console.log('valsey');
+     }
+     const cartQuantity = 5
+     if(cartQuantity){
+         console.log('Cart has products');
+     }
+
+    const result = true ? 'truthy' : 'falsey';
+     let result;
+
+     if(true){
+        result =  'truthy';
+     } else{
+         result = 'falsy';
+     }
+
+     false && console.log('hello');
+
+
+
 
 
    </script>
