@@ -34,16 +34,56 @@
          console.log('Cart has products');
      }
 
-    const result = true ? 'truthy' : 'falsey';
-     let result;
 
+
+     true ? 'truthy' : 'false';
+     console.log(result);
+      // Shortcut for This
      if(true){
         result =  'truthy';
      } else{
          result = 'falsy';
      }
 
+
+
+     let result = true ? 'truthy' : 'false';
+          //Shortcut for This
+     let result
+     if (condition){
+         result = 'truthy';
+     } else{
+         result = 'falsy';
+     }
+
+
+
+  // This Operator is Kinda useless
      false && console.log('hello');
+     if (condition){
+         console.log('hello');
+     }
+
+
+
+     const message = false &&'hello';
+     console.log(message);
+
+     let message;
+     if(condition){
+         message = 'hello';
+     }
+  // Useless operator would not recommend to use ever
+
+
+    // Useless too
+     const currency = undefined ||'USD';
+     console.log(currency)
+
+     if (!condition){
+         curency = 'USD';
+     }
+
 
 
 
