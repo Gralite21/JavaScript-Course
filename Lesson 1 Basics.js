@@ -1,4 +1,4 @@
-alert('hello');
+alert('hello');                                   // creates a Pop up with the string hello
 alert('Good afternoon');
 alert('u got yourself a virus');
 
@@ -7,5 +7,5 @@ alert('u got yourself a virus');
 10-2;
 10/2;
 
-document.body.innerHTML ='hello';
+document.body.innerHTML ='hello';                      // deletes all Content and displays hello
 

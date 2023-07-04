@@ -17,17 +17,17 @@
      console.log(3!==5);
      console.log(5>6-7);
 
-     if (true){console.log('hello');}
+     if (true){console.log('hello');}                    //if...else if...else
      if (false) {console.log('hello');}
      else{console.log('else');}
 
 
 
-     if(5){
+     if(5){                            // Everything else acts like true
          console.log('truthy');
      }
-     if(0){
-         console.log('valsey');
+     if(0){                            //Acts like false: false, 0,'',NaN,undefined,null
+         console.log('falsy');
      }
      const cartQuantity = 5
      if(cartQuantity){
@@ -36,7 +36,7 @@
 
 
 
-     true ? 'truthy' : 'false';
+     true ? 'truthy' : 'false';              //Ternary Operator
      console.log(result);
       // Shortcut for This
      if(true){
@@ -58,7 +58,7 @@
 
 
 
-  // This Operator is Kinda useless
+  // This Operator is useless/causes confusion
      false && console.log('hello');
      if (condition){
          console.log('hello');
@@ -76,7 +76,7 @@
   // Useless operator would not recommend to use ever
 
 
-    // Useless too
+    // Useless and causes confusion too
      const currency = undefined ||'USD';
      console.log(currency)
 

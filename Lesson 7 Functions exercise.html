@@ -21,7 +21,6 @@
   }
 
   welcome('Tim');
-
   /* function convertFahrenheit (Celsius){
     console.log(`${Celsius} Celsius is ${(Celsius*9/5)+32} Fahrenheit`);
   }
@@ -39,7 +38,7 @@
   }
   console.log(convertToCelsius(86));
 
-  function convertTemperature (degrees,unit){
+  function convertTemperature (degrees,unit){           //early return
     if (unit==='C'){
       return convertToFahrenheit(degrees)+'F';  // String Concatenation
     }else {
@@ -47,7 +46,15 @@
     }
   }
 
-  console.log(convertTemperature(25,'C'));
+  function gibmireinepositiveZahl (zahl){
+      if (Zahl<0){
+          return'Fehler:Zahl ist kleiner als null'   // cancel rest of the code and gives me the first return
+      }
+
+      return gibmireinepositiveZahl();
+  }
+
+  console.log(convertTemperature(25,'C'));          // shows the returned value in the console
   console.log(convertTemperature(86,'F'));
 
 
