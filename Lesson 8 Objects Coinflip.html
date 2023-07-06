@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CoinFlip</title>
+</head>
+<body>
+<button onclick="playGameHeads();">Heads</button>
+<button onclick="playGameTails();">Tails</button>
+
+
+<script>
+  function playGameHeads(){
+    const randomNumber = Math.random();
+
+    let result ='';
+    if (randomNumber>0.5) {
+      result = 'heads';
+    } else {
+      result = 'tails';
+    }
+
+    if(result === 'heads') {
+      console.log('You Win');
+    } else {
+      console.log('You Lose');
+    }
+  }
+
+  function playGameTails(){
+    const randomNumber = Math.random();
+
+    let result ='';
+    if (randomNumber>0.5) {
+      result = 'heads';
+    } else {
+      result = 'tails';
+    }
+
+    if(result === 'heads') {
+      console.log('You Lose');
+    } else {
+      console.log('You Win');
+    }
+  }
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

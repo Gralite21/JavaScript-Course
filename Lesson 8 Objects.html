@@ -62,11 +62,26 @@
     const jSONString = JSON.stringify(product2)
     console.log(JSON.parse(jSONString))         //JS object into  JS object
 
-    localStorage
+    localStorage.setItem('name','value');  // to store
+    localStorage.setItem('name',JSON.stringify(value));  //to store when u have a value( cause strings)
 
+    JSON.parse(localStorage.getItem('name')); // to get a value out of the Storage
 
+    localStorage.removeItem('name'); // reset value
 
+    console.log('hello'.length); // tells us how many letters
+    console.log('hello'.toUpperCase()); // gives a copy in Caps
 
+    const object1 = {
+        message:'hello'
+    };              // an object is just a reference ==> thats point to the object in the memory
+
+    object1===object2 // We cant compare objects because they have different references
+
+    const object4 = {
+        message: 'Hi',
+        price: 799
+    };
 
 
 </script>
