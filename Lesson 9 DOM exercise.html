@@ -12,14 +12,31 @@
 <button onclick=" document.querySelector('.js-text').innerText='You chose Heads'">Heads</button>
 <p class="js-text"> You chose ?</p>
 
-<input onclick="" placeholder="Name">
-<button>Submit</button>
+<input class="js-input" placeholder="Name" onkeydown="nameKey(event);">       <!-- After pressing key X -->
+<button onclick="nameResult();">Submit</button>
+<p class="js-yourName"></p>
 
+
+<input class="js.key" placeholder="new event" onkeyup="                      <!-- Live -->
+ const inputElement= document.querySelector('.js.key');
+ document.querySelector('.js.live').innerText = inputElement.value;
+">
+<p class="js.live"></p>
 
 <script>
   console.log(document.querySelector('button'));
   document.querySelector('.js-change').innerText ='9b done!';
 
+  function nameResult(){
+  const inputElement = document.querySelector('.js-input');
+  document.querySelector('.js-yourName').innerHTML =`Your Name is ${inputElement.value}`;
+  }
+
+  function nameKey(event){
+      if(event.key ==='Enter'){
+          nameResult();
+      }
+  }
 
 
 
