@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dom Projects with CSS</title>
+  <link rel="stylesheet" href="Lesson%2010%20CSS%20DOM%20projects.css">
+</head>
+<body>
+<p>YouTube Subscribe Button</p>
+<button onclick="subscribe();"
+        class="subscribe-button css-subscribe-button"
+>Subscribe</button>
+
+<p>Amazon Shipping Calculator</p>
+<p>Orders under 40$ = +10$ shipping</p>
+<p>Orders over 40$ = Free Shipping</p>
+<input class="js-cost css-input"  placeholder="Cost of order" onkeydown="costKey(event);">
+
+<button onclick="calculateTotal();" class="css-Calculate" >Calculate</button>
+<p class="js-total-cost"></p>
+
+<script src="Lesson%2010%20CSS%20DOM%20projects.js"></script>
+</body>
+</html>

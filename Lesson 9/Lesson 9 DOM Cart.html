@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
   <title>Cart Quantity</title>
 
 </head>
 <body>
-<p>Cart Quantity</p>
 
 <button onclick="
-         console.log(`CartQuantity: ${Cartquantity}`);
+         displayCartQuantity();
       ">Show Quantity</button>
 
 <button onclick="updateCartQuantity(+1); ">Add to Cart</button>
@@ -28,28 +27,13 @@
 <button onclick="updateCartQuantity(-3); ">-3</button>
 
 <button onclick="
-      Cartquantity = 0; console.log('Cart was Reset'); console.log(`CartQuantity: ${Cartquantity}`)
+      Cartquantity = 0; displayCartQuantity(); alert('Cart was reset');
       ">Reset Cart</button>
 
-<script>
-  let Cartquantity = 0;
+<p class="js-newQuantity"></p>
 
-  function updateCartQuantity (change){
-    if (Cartquantity +change >10 ) {
-      alert('The Cart is Full');
-      return;
-    }
 
-    if (Cartquantity + change <0){
-      alert('Not enough Items in the cart');
-      return;
-    }
-      Cartquantity += change;
-      console.log(`Cart quantity ${Cartquantity}`);
-
-  }
-
-</script>
+<script src="Lesson%209%20DOM%20Cart.js"></script>
 
 </body>
 
