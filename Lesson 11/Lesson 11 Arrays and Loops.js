@@ -43,7 +43,7 @@ let total= 0;
 for (let i=0;i<nums.length;i++){
     const num=nums[i];
     total =total +num;
-}
+} console.log(total)
 
 const numsDoubled =[];                      // to double numbers [2,2,6]
 for (let i=0;i<nums.length;i++){
